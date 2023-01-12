@@ -1,7 +1,8 @@
+import React from 'react';
 import './App.css';
-import Expenses from './components/Expenses';
+import Expenses from './components/Expenses/Expenses';
 
-function App() {
+const App = () => {
   // const para = document.createElement('p')
   // para.textContent = 'This is also visible'
   // document.getElementById('root').append(para)
@@ -28,6 +29,13 @@ function App() {
   ]
 
   return (
+    // React.createElement(
+    //   'div', 
+    //   {},
+    //   React.createElement('h2', {}, "Let's get started!" ),
+    //   React.createElement(Expenses, {items: expenses} )
+    //   )
+
     <div>
       <h2> Let's get started!</h2>
       <Expenses items={expenses}/>

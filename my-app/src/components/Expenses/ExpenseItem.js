@@ -1,8 +1,9 @@
+import React from 'react';
 import ExpenseDate from './ExpenseDate';
 import './ExpenseItem.css';
-import Card from './Card'
+import Card from '../UI/Card'
 
-function ExpenseItem(props) {
+const ExpenseItem = (props) => {
     // const expenseDate= new Date(2021, 2, 28)
     // const expenseTitle = 'Car Insurance'
     // const expenseAmount = 294.67
@@ -21,6 +22,7 @@ function ExpenseItem(props) {
             <div className="expense-item__price">{props.amount}</div>
             {/* <div className="expense-item__price">294.67</div> */}
         </div>
+        <button>Change Title</button>
     </Card>
     )
 }
